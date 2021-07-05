@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "videos",
+  "info": {
+    "name": "Videos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Quest": {
+      "type": "component",
+      "repeatable": true,
+      "component": "social-media.quest"
+    },
+    "VideoId": {
+      "type": "string"
+    }
+  }
+}

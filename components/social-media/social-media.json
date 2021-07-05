@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_social_media_social_medias",
+  "info": {
+    "name": "Social Media",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Youtube",
+        "Twitch",
+        "Instagram",
+        "Snapchat",
+        "TikTok",
+        "Facebook",
+        "Twitter",
+        "Discord"
+      ]
+    },
+    "Link": {
+      "type": "string"
+    }
+  }
+}

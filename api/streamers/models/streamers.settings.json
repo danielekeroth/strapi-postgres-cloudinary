@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "streamers",
+  "info": {
+    "name": "Streamers",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Nick": {
+      "type": "string"
+    },
+    "Age": {
+      "type": "integer"
+    },
+    "Brief": {
+      "type": "richtext"
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "SocialMedia": {
+      "type": "component",
+      "repeatable": true,
+      "component": "social-media.social-media"
+    }
+  }
+}

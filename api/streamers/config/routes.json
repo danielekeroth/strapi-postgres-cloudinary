@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/streamers",
+      "handler": "streamers.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/streamers/count",
+      "handler": "streamers.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/streamers/:id",
+      "handler": "streamers.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/streamers",
+      "handler": "streamers.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/streamers/:id",
+      "handler": "streamers.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/streamers/:id",
+      "handler": "streamers.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
