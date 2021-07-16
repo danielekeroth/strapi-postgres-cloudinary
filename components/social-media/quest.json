@@ -2,14 +2,29 @@
   "collectionName": "components_social_media_quests",
   "info": {
     "name": "Quest",
-    "icon": "apple-alt"
+    "icon": "apple-alt",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "Quest": {
+    "Title": {
       "type": "richtext"
     },
-    "Post": {
+    "Description": {
+      "type": "string"
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "InstagramID": {
       "type": "string"
     }
   }
